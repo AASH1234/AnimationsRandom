@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.select.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlItem"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/spinner_background">
+
+        <RelativeLayout
+            android:id="@+id/rlNotSelected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivClip"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/ic_status_d"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transitionName="yuey"
+                android:text="Accessibility"
+                android:textSize="16sp"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSelected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@drawable/green_background">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transitionName="yuey"
+                android:text="Accessibility"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_cross"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:backgroundTint="@color/white"
+        android:elevation="6dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_black"/>
+
+    <LinearLayout
+        android:id="@+id/llFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/fab"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:backgroundTint="@color/white"
+            android:elevation="6dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_cross"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:backgroundTint="@color/white"
+            android:elevation="6dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_cross"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:backgroundTint="@color/white"
+            android:elevation="6dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_cross"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rlItem"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_feed_approval"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMove"
+        android:backgroundTint="@color/white"
+        android:elevation="6dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_black"/>
+
+</RelativeLayout>
